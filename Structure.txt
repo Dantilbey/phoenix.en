@@ -8,6 +8,10 @@
 		</css>
 		<session>index.html</session>
 		<login>login.php</login>
-		<logout>logout.php</logout</logout>	
+		<login>log_check.php</login>
+		<logout>logout.php</logout>
+		<register>register.php</register>
+		<register>reg_check.php</register>
+		<inc>p-connect.php</inc>
 	</src>
 </folders>
