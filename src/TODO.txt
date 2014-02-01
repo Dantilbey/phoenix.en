@@ -1,0 +1,10 @@
+Phoenix.en
+
+Todo list:
+
+1. Requirements Analysis
+2. Create login page
+3. Create Command-line input screen
+4. Database Model
+5. Build Database
+6. Connect to database
