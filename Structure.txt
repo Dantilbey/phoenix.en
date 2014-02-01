@@ -1,0 +1,13 @@
+<folders>
+	<src>
+		<scripts>
+			<jquery>jquery.js</jquery>
+			<command>command.js</command>
+		</scripts>
+		<css>
+		</css>
+		<session>index.html</session>
+		<login>login.php</login>
+		<logout>logout.php</logout</logout>	
+	</src>
+</folders>
