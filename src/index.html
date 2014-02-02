@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example Phoenix Engine</title>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/command.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div id="console">
+        <p id="load_description">Once a connection has been established to the server this page will load with the command line input with some sample commands.</p>
+
+        <p id="load_home">Enter a command input to test the functionality of the console</p>
+        <p id="message_help" style="display:none;">Here is a list of commands:</p>
+        <div id="placeholder"></div>
+        <form onsubmit="return false;">
+            <input type="text" size="50" autofocus="autofocus" id="command_line" />
+        </form>
+    </div>
+</body>
+</html>

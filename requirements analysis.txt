@@ -1,0 +1,39 @@
+Web-textbased-game
+
+Developing textbased browser games? 
+Join in this collaboration project and take as much part in it as you feel that you want to do. This project is all about learning best practise web development techniques using a variety of different web technologies. We will also be including sample code in this project to learn from and to use as a base for this project. Feel free to take a look at the code samples and todo lists.
+ Composing a study of text-based games:
+
+What types of text-based games are there?
+Visual Novels
+Visual novels are composed of several required features which make them up to be what they are today:
+Visual Novels are narrative driven, usually written from first person and can have one or more endings where the main segment of the story is the main trunk of the tree and as you proceed higher up the tree and the player or reader (based on the context of the visual novel) can make certain choices in which the various routes branch away from the main trunk. However Visual Novels with a linear story are generally called Sound Novels but still come under the Visual Novel Umbrela. Within the scope of the Visual Novel umbrella are Adventure Novels, in which they usually have more game-like or interactive elements which directly link back to the context of the Visual Novel.
+Visual novels also have sound, music and imagery which usually consists of with character illustrations, scenes effects and the user interface and is a subject of lengthy analysis which will be expanded later on.
+Adventure Games
+Command-line style games like Zork and The Hitch hikers guide to the galaxy. These style of games test the players creativity and memory, they are ther fundamental basis from which visual novels have been built on and evolved however the medium has withstood the test of time.
+Adventure Novels (books)
+Adventure Novels are made of many interconnected plots stringed together throughout the book when the reader can make choices or roll the dice to determine the outcome, in which the outcome may not follow directly after the segment you just read but is referred to with a page number. The book will make the reader jump backwards and forwards throughout the book until eventually they reach a conclusion which could in fact be an undesirable ending in which the reader can choose to put the book down, start again or go back to a previous point in the narrative from which they came from.
+Browser text-based games
+Browser games are subjected to a lot of attention and has grown quite broad in what is available since internet games became possible, thanks to dynamic web programming languages like PHP. These games can be very addictive and can require long-term investment in order to get the most out of these games. As we get more and more used to using the internet for browsing it only makes sense that the popularity of browser-based games continue to increase. Facebook is evidence enough to prove this point. The benefits are, the user doesnÅft have to download software in order to run the game except an internet browser, the user can log-in to their game on any device and continue from where they left off, a lot of the processing can be done on the server-side meaning you can use almost any computer that has a compatible browser. Browser based games are very similar in architecture to Cloud storage and over such services in that it is Software used as a Service. Providing that you are playing a game that is not a test release losing your data is unlikely to happen.
+
+What is a text-based game?
+
+
+What is the platform?
+
+
+What kind of text-based game?
+
+
+What languages will the text based game be written in?
+
+
+What is the theme for the text-based game?
+
+
+What interactivity or puzzles will the text-based game have?
+
+
+What is the narrative of the text-based game?
+
+
