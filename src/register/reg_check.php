@@ -7,7 +7,6 @@ if(isset($_POST['submit'])){
 	$password = $_POST['password'];
 	$password2 = $_POST['password2'];
 	$email = $_POST['email'];
-	$email_safe = $mysqli->real_escape_string($email);
 
 	//santatise the input
 	$username_safe = $mysqli->real_escape_string($username);
