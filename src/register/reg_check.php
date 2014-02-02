@@ -2,27 +2,43 @@
 include('../inc/p-connect.php');
 
 if(isset($_POST['submit'])){
-	//grab the users input
 	$username = $_POST['username'];
-	$password = $_POST['password'];
-	$password2 = $_POST['password2'];
 	$email = $_POST['email'];
+	$fname = $_POST['fname'];
+	$lname = $_POST['lname'];
+	$password = $_POST['password'];
+	$reppassword = $_POST['reppassword'];
 
-	//santatise the input
-	$username_safe = $mysqli->real_escape_string($username);
-	$password_safe = $mysqli->real_escape_string($password);
-	$password2_safe = $mysqli->real_escape_string($password2);
-	$email_safe = $mysqli->real_escape_string($email);
+    //blowfish information
+    $blowfish_pre = '$2a$12$';
+    $blowfish_end = '$';
 
-	if($password_safe != $password2_safe){
-		die('Fatal erorr: Your password\'s don\'t match, please go back and fix this.');
+	//blowfish accepts these characters as salts
+	$Allowed_Chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789./';
+	$Chars_Len = 63;
+
+	//18 would be secure as well
+	$Salt_Length = 21;
+
+	$mysqli_date = date( 'y-m-d' );
+	$salt = "";
+
+	for($i=0; $i<$Salt_Length; $i++)
+	{
+    	$salt .= $Allowed_Chars[mt_rand(0,$Chars_Len)];
+	}
+
+	$bcrypt_salt = $blowfish_pre . $salt . $blowfish_end;
+
+	if($password != $reppassword){
+		die('Ooops, looks like you\'ve spilt your coffee everywhere!<br />Not to worry, just head back and <b>make sure both your passwords match - otherwise... you\'ll just end up back here!');
 	} else {
-		//create an md5 hash of the password
-		$password_safe = sha1($password_safe);
-		//insert into db
-		$sql = "INSERT INTO users (username,password,email) VALUES ('$username_safe', '$password_safe', '$email_safe')";
-		$mysqli->query($sql);
-		echo('Your new account awaits you!');
+
+	$hashed_password = crypt($password, $bcrypt_salt);
+
+	$sql = "INSERT INTO users (email, reg_date, fname, lname, salt, password) VALUES ('$email', '$mysqli_date', '$fname', '$lname', '$salt', '$hashed_password')";
+	$mysqli->query($sql);
+	echo 'Thanks for registering ' . $username . '.';
 	}
 }
 ?>
