@@ -1,0 +1,6 @@
+What is the text-based game about?
+
+
+Requirements
+Login - connect to database
+Command-line - javascript +jquery

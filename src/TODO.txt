@@ -8,3 +8,23 @@ Todo list:
 4. Database Model
 5. Build Database
 6. Connect to database
+
+Command-Line example
+
+You are an engineer working in a computer science lab, everything that goes on in this lab is top secret and musn't be released to the general public.
+
+You are responsible for making sure all the security systems are fully functional, if a system leak occurres the whole world will be in danger of annialation.
+
+You are on your lunch break, feel free to wonder around the lab.
+
+Careful, try not to spill your coffee on the equipment.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Dan's Laboratory
+
+"WARNING!" says AGATHA.
+
+A bug has been discovered in the system, find the server associated with the system error and locate the cause. To do this you may need to
+install an application on the server in order to solve the problem.
+
+2. Map
