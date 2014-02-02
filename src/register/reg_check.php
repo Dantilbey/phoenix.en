@@ -58,7 +58,7 @@ if(isset($_POST['submit'])){
 		}
 	}
 
-	$prep_stmt = "SELECT email FROM users WHERE email = ?";
+	$prep_stmt = "SELECT email FROM users WHERE email = ? LIMIT 1";
 	$stmt = $mysqli->prepare($prep_stmt);
 
 	if($stmt){
