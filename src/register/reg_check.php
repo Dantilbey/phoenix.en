@@ -45,6 +45,10 @@ if(isset($_POST['submit'])){
 		$error_msg = die('Your passwords don\'t match!');
 	}
 
+	if(strlen($_POST['password']) < 8){
+		die('Please enter a password that is 8 or more characters');
+	}
+
 	$prep_stmt = "SELECT username FROM users WHERE username = ? LIMIT 1";
 	$stmt = $mysqli->prepare($prep_stmt);
 
