@@ -11,11 +11,7 @@ $general->logged_in_protect();
 </head>
 <body>
 	<div id="container">
-		<ul>
-			<li><a href="index.php">Home</a></li>
-			<li><a href="register.php">Register</a></li>
-			<li><a href="login.php">Login</a></li>
-		</ul>
+		<?php include 'includes/menu.php'; ?>
 		<h1>Activate your account</h1>
 
 		<?php

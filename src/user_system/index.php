@@ -12,12 +12,8 @@ $general->logged_in_protect();
 </head>
 <body>
 	<div id="container">
-		<ul>
-			<li><a href="index.php">Home</a></li>
-			<li><a href="register.php">Register</a></li>
-			<li><a href="login.php">Login</a></li>
-		</ul>
-		<h1>Welcome to the phoenix.en test</h1>
+		<?php include 'includes/menu.php'; ?>
+		<h1>Welcome to phoenix.en</h1>
 	</div>
 </body>
 </html>

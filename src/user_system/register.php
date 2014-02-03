@@ -54,20 +54,16 @@ if(isset($_GET['success']) && empty($_POST['success'])) {
 </head>
 <body>
 	<div id="container">
-	<ul>
-		<li><a href="index.php">Home</a></li>
-		<li><a href="register.php">Register</a></li>
-		<li><a href="login.php">Login</a></li>
-	</ul>
+	<?php include 'includes/menu.php'; ?>
 	<h1>Register</h1>
 
 	<form method="post" action="">
 		<h4>Username:</h4>
-		<input type="text" name="username" />
+		<input type="text" name="username" value="<?php if(isset($_POST['username'])) echo htmlentities($_POST['username']); ?>"/>
 		<h4>Password:</h4>
 		<input type="password" name="password" />
 		<h4>Email:</h4>
-		<input type="text" name="email" />
+		<input type="text" name="email" value="<?php if(isset($_POST['email'])) echo htmlentities($_POST['email']); ?>"/>
 		<br />
 		<input type="submit" name="submit" />
 	</form>

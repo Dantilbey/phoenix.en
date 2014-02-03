@@ -21,7 +21,7 @@ if(empty($_POST) === false) {
 			$errors[] = 'Sorry, that username/password is invalid';
 		} else {
 			//username/password is correct and the login method of the $users object returns the user's id, which is stored in $login.
-
+			session_regenerate_id(true); // destroying the old session id and creating a new one
 			$_SESSION['id'] = $login; //the user's id is now set into the user's session in the form of $_SESSION['id'].
 
 			#redirect the user to home.php
@@ -40,11 +40,7 @@ if(empty($_POST) === false) {
 </head>
 <body>
 	<div id="container">
-		<ul>
-			<li><a href="index.php">Home</a></li>
-			<li><a href="register.php">Register</a></li>
-			<li><a href="login.php">Login</a></li>
-		</ul>
+		<?php include 'includes/menu.php'; ?>
 		<h1>Login</h1>
 		<?php
 
@@ -54,12 +50,14 @@ if(empty($_POST) === false) {
 		?>
 		<form method="post" action="">
 			<h4>Username:</h4>
-			<input type="text" name="username">
+			<input type="text" name="username" value="<?php if(isset($_POST['username'])) echo htmlentities($_POST['username']); ?>">
 			<h4>Password:</h4>
 			<input type="password" name="password">
 			<br>
 			<input type="submit" name="submit">
 		</form>
+		<br />
+		<a href="confirm-recover.php">Forgot your username/password?</a>
 	</div>
 </body>
 </html>
